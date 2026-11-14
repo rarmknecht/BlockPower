@@ -2,6 +2,14 @@
 
 A sliding-block puzzle for the browser. Slide the jeeps and trucks along their lanes to clear a path, then drive the **Red Jeep** out through the exit on the right wall.
 
+**▶ Play it in your browser: https://rarmknecht.github.io/BlockPower/**
+
+It works on phones, tablets, and desktops, with nothing to install.
+
+<p align="center">
+  <img src="docs/screenshot.png" alt="A Block Power puzzle: the red jeep sits on the left of the exit row, blocked by a gray freight truck, with other trucks and jeeps parked around a 6×6 lot and the green EXIT gate on the right wall." width="420">
+</p>
+
 - 20 puzzles in four tiers (Starter, City Grid, Freight Yard, Master Jam), on 6×6 up to 7×8 lots
 - Every par is the true optimal move count, computed by a breadth-first solver
 - Hint button shows the next optimal move from wherever you are
@@ -54,6 +62,7 @@ js/vehicles.js        SVG vehicle artwork
 js/audio.js           Web Audio sound effects (synthesized, no audio files)
 tests/verify.mjs      Validates every level and checks its par
 tools/generate-level.mjs  Generates new levels
+docs/screenshot.png   README screenshot
 ```
 
 ## Tests
@@ -73,3 +82,7 @@ node tools/generate-level.mjs '{"rows":6,"cols":6,"exitRow":2,"minN":10,"maxN":1
 ```
 
 It prints a level as JSON. Add an `id`, `name`, and `difficulty`, append it to `js/levels.js`, and run the tests.
+
+## License
+
+Block Power is dedicated to the public domain under [CC0 1.0 Universal](LICENSE). You can copy, modify, and distribute it, including for commercial use, without asking permission or giving credit.
