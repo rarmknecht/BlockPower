@@ -1,0 +1,10 @@
+{
+  "name": "Block Power",
+  "short_name": "Block Power",
+  "description": "Slide jeeps and trucks to free the Red Jeep in this tactile sliding block puzzle.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a"
+}
